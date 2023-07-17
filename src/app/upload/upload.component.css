@@ -1,0 +1,57 @@
+/* .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .file-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    outline-color: aqua;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+  .btn{
+    background-color: whitesmoke;
+  }
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .accent-card{
+    background-color:#72A2C0;
+    color: black ;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+
+  .buttonColor{
+    color: rgb(8, 0, 0);
+    margin-top: 0%;
+  }
+
+  .header-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .extended-fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    
+  }
+  
+  mat-icon {
+    margin-right: 0.5rem;
+  } */

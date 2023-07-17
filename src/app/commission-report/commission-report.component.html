@@ -1,0 +1,42 @@
+<!-- commission-report.component.html -->
+<div class = "container">
+  <!-- <mat-card class = "accent-card"> -->
+    <h2 class = "header-text">Commission Report</h2>
+    <div class = "form-container">
+
+    <mat-form-field appearance="fill" color = "accent">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker" (dateChange)="onDateChange($event.value)" />
+      <mat-datepicker-toggle matSuffix [for]="picker"> </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    </div>
+  
+    <hr>
+
+</div>
+<h1>display the commissions</h1>
+  <table border ="4">
+    <thead>
+      <th>commissionId</th>
+      <th>productName</th>
+      <th>salesmanName</th>
+      <th>quantity</th>
+      <th>salesAmount</th>
+      <th>salesmanArea</th>
+      <th>salesmanCommission</th>
+      <th>createdDate</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let com of commissions">
+        <td>{{com.commissionId}}</td>
+        <td><br><button (click)="openQuantityDialog({type: 'product',area: com.salesmanArea, quantity: com.quantity, sales: com.salesAmount})">{{ com.productName}}</button></td>
+        <td><br><button (click)="openQuantityDialog({type: 'salesman', area: com.salesmanArea, sales: com.salesAmount, commission: com.salesmanCommission})">{{com.salesmanName}}</button> </td>
+        <td>{{com.quantity}}</td>
+        <td>{{com.salesAmount}}</td>
+        <td>{{com.salesmanArea}}</td>
+        <td>{{com.salesmanCommission}}</td>
+        <td>{{com.createdDate}}</td>
+      </tr>
+    </tbody>
+  </table> 

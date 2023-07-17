@@ -1,0 +1,14 @@
+<div [@listAnimation]>
+<h2 mat-dialog-title>{{data.type === 'product' ? 'Product Details' : 'Salesman Details'}}</h2>
+<div mat-dialog-content>
+  <p *ngIf="data.type === 'product'">Area: {{data.area}}</p>
+  <p *ngIf="data.type === 'product'">Quantity: {{data.quantity}}</p>
+  <p *ngIf="data.type === 'product'">Total Sales: {{data.sales}}</p>
+  <p *ngIf="data.type === 'salesman'">Area: {{data.area}}</p>
+  <p *ngIf="data.type === 'salesman'">Total Sales: {{data.sales}}</p>
+  <p *ngIf="data.type === 'salesman'">Commission: {{data.commission}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>
+</div>

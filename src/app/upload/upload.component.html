@@ -1,0 +1,46 @@
+<div>
+    <br><input type="file" (change)="onSalesFileSelected($event)"/>
+</div>
+<div>
+  <br><input type="file" (change)="onProductFileSelected($event)"/>
+</div>
+<div>
+  <br><button (click)="uploadFiles()">Upload Files</button>
+</div>
+<hr>
+
+<!-- <div class="container">
+  <mat-card class = "accent-card">
+    <h2 class = "header-text">Upload Files</h2>
+    
+    <div [@listAnimation]>
+    <mat-form-field class="file-input" appearance="fill" color="accent">
+      <mat-label>Sales Data</mat-label>
+      <input hidden type="file" #salesFileInput (change)="onSalesFileSelected($event)" />
+      <input matInput [value]="salesData?.name || ''" readonly placeholder="Select a file..." />
+      <button mat-button matSuffix mat-stroked-button (click)="salesFileInput.click()">
+        <mat-icon>attach_file</mat-icon>
+      </button>
+    </mat-form-field>
+    </div>
+    <div [@listAnimation]>
+    <mat-form-field class="file-input" appearance="fill" color="accent">
+      <mat-label>Product Data</mat-label>
+      <input hidden type="file" #productFileInput (change)="onProductFileSelected($event)" />
+      <input matInput [value]="productData?.name || ''" readonly placeholder="Select a file..." />
+      <button mat-button matSuffix mat-stroked-button (click)="productFileInput.click()">
+        <mat-icon>attach_file</mat-icon>
+      </button>
+    </mat-form-field>
+    </div>
+    <div [@listAnimation]>
+    <button class="btn" mat-fab extended color="accent" (click)="uploadFiles()" class="extended-fab">
+      <mat-icon>file_upload</mat-icon>
+      Upload Files</button>
+    </div>
+    <div *ngIf="uploading" class="spinner-container">
+        <mat-progress-spinner mode="indeterminate" diameter="30"></mat-progress-spinner>
+      </div>
+      </mat-card>
+  </div>
+   -->
